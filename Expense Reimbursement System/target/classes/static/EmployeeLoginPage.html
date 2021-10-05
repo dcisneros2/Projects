@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!--Option to define lang but it is nice to do-->
+
+<head>
+    <meta = charset="utf-8"> <!--meta charset defines what type of char system browser uses-->
+    <link rel="stylesheet" href="EmployeeLoginPage.css">
+
+    <img class="center" src="logo.png" alt="logo not found" width="350" height="200" >
+    <title>Employee Login Portal</title> <!--This is title for browser tab-->
+</head>
+
+<body>
+    <header>
+        <h1>Employee Portal</h1>
+    </header>
+    
+    <div class="login_submission">
+            <form id = "login_form" method="POST" action = "http:localhost:7000/loginSubmission">
+                <input type = "text" placeholder = "Enter username" required maxlength="25" required minlength="1" name="username"/>
+                <input type = "text" placeholder = "Enter password" required maxlength="25" required minlength="1" name="password" />
+                <input type = "submit" value="Login" required/>
+            </form>
+    </div>
+
+
+
+
+    <script src = "loginpage.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!--Option to define lang but it is nice to do-->
+
+<head>
+    <meta = charset="utf-8"> <!--meta charset defines what type of char system browser uses-->
+    <link rel="stylesheet" href="managerhome.css">
+
+    <img id="logo" src="logo.png" alt="logo not found" >
+    <title>Employee Home</title> <!--This is title for browser tab-->
+</head>
+
+<body>
+    <header>
+        <h1>Employee Home</h1>
+    </header>
+    
+    <div class = "w3_bar" >
+        <a href="EmployeeLoginPage.html" class = "w3-bar-item nav_bar_buttons" id="logout_button">Logout</a>
+
+    </div>
+
+
+    <div id = "reinbursement_table_space">
+        
+
+
+    </div>
+
+    <h4>
+        Employee Reimbursement Information
+    </h4>
+
+    <table>
+
+    </table>
+
+    <p id = "update_reimbursement">
+        If you would like to submit a new reimbursement fill out this form then click submit.
+    </p>
+
+    <form id = "reinbursement_form" method="POST" action = "/employee/new-reimbursement">
+        <input type = "text" placeholder = "Travel Reimbursement:" required maxlength="8" required minlength="1" name="travel_r"/>
+        <input type = "text" placeholder = "Mileage Reimbursement:" required maxlength="8" required minlength="1" name="mileage_r" />
+        <input type = "text" placeholder = "Food Reimbursement:" required maxlength="8" required minlength="1" name="food_r" />
+        <input type = "text" placeholder = "Supplies Reimbursement:" required maxlength="8" required minlength="1" name="supplies_r" />
+        <input type = "submit" value="Submit Change" required/>
+    </form>
+
+
+    <script src = "employee_controller.js"></script>
+</body>
+
+</html>
+

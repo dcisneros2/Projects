@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!--Option to define lang but it is nice to do-->
+
+<head>
+    <meta = charset="utf-8"> <!--meta charset defines what type of char system browser uses-->
+    <link rel="stylesheet" href="managerhome.css">
+
+    <img id="logo" src="logo.png" alt="logo not found" >
+    <title>Manager Home</title> <!--This is title for browser tab-->
+</head>
+
+<body>
+    <header>
+        <h1>Manager Home</h1>
+    </header>
+    
+    <div class = "w3_bar" >
+        
+        <a href="manager_statistics.html" class = "w3-bar-item nav_bar_buttons">Statistics</a>
+        <a href="EmployeeLoginPage.html" class = "w3-bar-item nav_bar_buttons" id="logout_button">Logout</a>
+
+    </div>
+
+
+    <div id = "reinbursement_table_space">
+        
+
+
+    </div>
+
+    <h4>
+        Employee Reimbursement Information
+    </h4>
+
+    <table>
+
+    </table>
+
+    <p id = "update_reimbursement">
+        If you would like to update reinbursement of an Employee,
+        please enter, fill in the form then click submit.
+    </p>
+
+    <form id = "reinbursement_form" method="POST" action = "/manager/update-reimbursement">
+        <input type = "number" placeholder = "Enter Employee Id:" required maxlength="8" required minlength="1" name="id"/>
+        <input type = "number" placeholder = "Enter Reimbursement Id:" required maxlength="8" required minlength="1" name="reinbursement_id" />
+        <input type = "text" placeholder = "Enter New Status:" required maxlength="25" required minlength="1" name="status"/>
+        <input type = "submit" value="Submit Change" required/>
+    </form>
+
+
+    <script src = "manager_controller.js"></script>
+</body>
+
+</html>
+
